@@ -1,0 +1,224 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+}
+
+.header-black{
+  background-color: black;
+  color: white;
+  padding-left: 80px;
+  display: flex;
+  text-wrap: nowrap;
+}
+
+.nav,
+.nav-1{
+  display: inline-block;
+  padding: 12px;
+  font-size: 14px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.nav-1{
+  box-shadow: 0px -6px 0px white inset;
+}
+
+.nav:hover,
+.nav-1:hover{
+  background-color: white;
+  color: black;
+  transition: background-color 0.15s,
+  color 0.15s;
+}
+
+.header-white{
+  height: 64px;
+  border-bottom: 1px solid rgb(225, 223, 223);
+  display: flex;
+}
+
+.coursera-svg{
+  width: 125px;
+  padding-left: 86px;
+  padding-top: 24px;
+  cursor: pointer;
+}
+
+.explore-btn{
+  color: rgb(0, 86, 210);
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px 42px 10px 16px;
+  margin-top: 12px;
+  margin-left: 14px;
+  background-color: white;
+  border: 1px solid rgb(0, 86, 210);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.explore-btn:hover{
+  background-color: rgba(0, 88, 210, 0.079);
+  transition: background-color 0.15s;
+}
+
+.chevron-down-svg{
+  width: 12px;
+}
+
+.explore-div{
+  position: relative;
+}
+
+.chevron-down-div{
+  position: absolute;
+  right: 18px;
+  top: 24px;
+}
+
+.search-input-div{
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex: 1;
+  padding-left: 12px;
+  min-width: 240px;
+}
+
+.search-input{
+  width: 0;
+  padding: 14px;
+  border-radius: 36px;
+  border: 1px solid rgb(225, 223, 223);
+  font-size: 16px;
+  color: rgb(91, 103, 128);
+  flex: 1;
+}
+
+.search-input::placeholder{
+  font-size: 14px;
+  padding-left: 6px;
+  color: rgb(91, 103, 128);
+}
+
+.search-input:focus{
+  outline: none;
+  border-color: rgb(0, 86, 210);
+}
+
+.search-icon-div{
+  position: absolute;
+  right: 7px;
+  top: 17px;
+  background-color: rgb(0, 86, 210);
+  border-radius: 16px;
+  width: 32px;
+  height: 32px;
+}
+
+.search-icon{
+  width: 24px;
+  padding-left: 5px;
+  padding-top: 2px;
+}
+
+.navigation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  text-wrap: nowrap;
+}
+
+.online,
+.find{
+  padding: 0 10px;
+  font-size: 14px;
+  color: rgb(91, 103, 128);
+  cursor: pointer;
+}
+
+.online:hover,
+.find:hover{
+  color: rgb(0, 86, 210);
+  transition: color 0.15s;
+}
+
+.login{
+  padding: 0 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login a{
+  text-decoration: none;
+  color: rgb(0, 86, 210);
+}
+
+.login:hover{
+  text-decoration: underline;
+}
+
+.join-btn{
+  padding-left: 12px;
+}
+
+.navigation button{
+  padding: 12px 6px;
+  border: 1px solid rgb(0, 86, 210);
+  border-radius: 4px;
+  color: rgb(0, 86, 210);
+  font-weight: bolder;
+  background-color: white;
+}
+
+.navigation button:hover{
+  background-color: rgba(0, 88, 210, 0.079);
+  transition: background-color 0.15s;
+}
+
+.main-content-div{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 420px;
+}
+
+.main-content h1{
+  font-size: 60px;
+}
+
+.main-content p{
+  font-size: 22px;
+  line-height: 36px;
+}
+
+.main-content .btn-1,
+.main-content .btn-2{
+  padding: 12px 36px;
+  font-size: 16px;
+}
+
+.main-content .btn-1{
+  background-color: rgb(0, 86, 210);
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.main-content .btn-2{
+  background-color: white;
+  color: rgb(0, 86, 210);
+  border: 1px solid rgb(0, 86, 210);
+  border-radius: 3px;
+}
+
+.main-content .btn-1:hover,
+.main-content .btn-2:hover{
+  text-decoration: underline;
+
+}
