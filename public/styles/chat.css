@@ -2,7 +2,7 @@
     position: fixed;
     bottom: 30px;
     right: 50px;
-    background-color: rgb(0, 86, 210);
+    background-color: #00843d;
     color: white;
     padding: 16px;
     border-radius: 50%;
@@ -24,7 +24,7 @@
 }
 
 .chatbox-header {
-    background-color: rgb(0, 86, 210);
+    background-color: #00843d;
     color: white;
     padding: 12px;
     border-top-left-radius: 10px;
@@ -55,7 +55,7 @@
 }
 
 .faq-question {
-    background-color: rgb(242, 245, 250);
+    background-color: rgba(0, 132, 61, 0.079);
     border: none;
     border-radius: 3px;
     padding: 10px;
@@ -67,14 +67,14 @@
 }
 
 .faq-question:hover {
-    background-color: rgb(0, 86, 210);
+    background-color: #00843d;
     color: white;
     transition: background-color 0.15s, color 0.15s;
 }
 
 .chatbox-answer {
     padding: 10px;
-    background-color: rgb(0, 86, 210);
+    background-color: #00843d;
     color: white;
     display: none;
     font-size: 16px;

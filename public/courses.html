@@ -3,15 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coursera | Courses</title>
-  <link rel="icon" type="image/png" href="img/coursera-logo.png">
+  <title>AKU | Courses</title>
+  <link rel="icon" type="image/png" href="img/AKU-logo.png">
   <link rel="stylesheet" href="styles/courses.css" type="text/css">
+  <link rel="stylesheet" href="styles/chat.css" type="text/css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-  <!-- Prevent caching of the page -->
-  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, private">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <div class="header-black">
@@ -23,7 +20,7 @@
 
   <div class="header-white">
 
-    <div><img src="img/coursera-name.svg" class="coursera-svg"></div>
+    <div><img src="img/aku.png" class="coursera-svg"></div>
     <div class="explore-div"><button class="explore-btn">Explore</button>
       <div class="chevron-down-div"><img src="img/chevron-down.svg" class="chevron-down-svg"></div>
     </div>
@@ -34,7 +31,6 @@
     </div>
 
     <div class="navigation">
-      <div><button id="logout-btn">Logout</button></div>
       <div class="online">Online Degrees</div>
       <div class="find">Find your New Career</div>
       <div class="globe"><img src="img/globe.png" class="globe-icon"></div>
@@ -45,20 +41,21 @@
   </div>
 
   <div class="heading">
-    <h1>Explore Coursera</h1>
+    <h1>Explore More</h1>
   </div>
 
   <div class="grid">
 
+    <a href="data.html">
     <div class="course-grid">
       <div>
         <img src="thumbnails/thumbnail-1.jfif" class="thumbnail">
       </div>
-
-      <div><p class="para-1">Data Science</p>
-        <p class="para-2">425 Courses</p>
+        <div><p class="para-1">Data Science</p>
+          <p class="para-2">425 Courses</p>
+        </div>
       </div>
-    </div>
+    </a>
 
     <a href="enroll.html">
       <div class="course-grid" class="enroll-link">
@@ -72,16 +69,19 @@
       </div>
     </a>
     
-    <div class="course-grid">
-      <div>
+    <a href="com.html">
+      <div class="course-grid">
+        <div>
         <img src="thumbnails/thumbnail-3.jfif" class="thumbnail">
       </div>
-
+      
       <div><p class="para-1">Computer Science</p>
         <p class="para-2">668 Courses</p>
       </div>
     </div>
+  </a>
 
+  <a href="per.html">
     <div class="course-grid">
       <div>
         <img src="thumbnails/thumbnail-4.jfif" class="thumbnail">
@@ -91,110 +91,120 @@
         <p class="para-2">137 Courses</p>
       </div>
     </div>
+  </a>
 
+  <a href="tech.html">
     <div class="course-grid">
       <div>
         <img src="thumbnails/thumbnail-5.jfif" class="thumbnail">
       </div>
-
+      
       <div><p class="para-1">Information Technology</p>
         <p class="para-2">145 Courses</p>
       </div>
     </div>
-
-    <div class="course-grid">
-      <div>
+  </a>
+<a href="lern.html">
+  <div class="course-grid">
+    <div>
         <img src="thumbnails/thumbnail-6.jfif" class="thumbnail">
       </div>
-
+      
       <div><p class="para-1">Language  Learning</p>
         <p class="para-2">150 Courses</p>
       </div>
     </div>
+  </a>
+
+    <a href="math.html">
+      <div class="course-grid">
+        <div>
+          <img src="thumbnails/thumbnail-7.jfif" class="thumbnail">
+        </div>
+        
+        <div><p class="para-1">Math and Logic</p>
+          <p class="para-2">70 Courses</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="phy.html">
+      <div class="course-grid">
+        <div>
+          <img src="thumbnails/thumbnail-8.jpg" class="thumbnail">
+        </div>
+        
+        <div><p class="para-1">Physical Science and Engineering</p>
+          <p class="para-2">413 Courses</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="health.html">
+      <div class="course-grid">
+        <div>
+          <img src="thumbnails/thumbnail-9.jfif" class="thumbnail">
+        </div>
+        
+        <div><p class="para-1">Health</p>
+          <p class="para-2">471 Courses</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="social.html">
+      <div class="course-grid">
+        <div>
+          <img src="thumbnails/thumbnail-10.jfif" class="thumbnail">
+        </div>
+        
+        <div><p class="para-1">Social Sciences</p>
+          <p class="para-2">401 Courses</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="art.html">
+      <div class="course-grid">
+        <div>
+          <img src="thumbnails/thumbnail-11.jfif" class="thumbnail">
+        </div>
+        
+        <div><p class="para-1">Arts and Humanities</p>
+          <p class="para-2">338 Courses</p>
+        </div>
+      </div>
+    </a>
 
     <div class="course-grid">
       <div>
-        <img src="thumbnails/thumbnail-7.jfif" class="thumbnail">
+        <img src="thumbnails/thumbnail-0.jpg" class="thumbnail">
       </div>
-
-      <div><p class="para-1">Math and Logic</p>
-        <p class="para-2">70 Courses</p>
-      </div>
-    </div>
-
-    <div class="course-grid">
-      <div>
-        <img src="thumbnails/thumbnail-8.jfif" class="thumbnail">
-      </div>
-
-      <div><p class="para-1">Physical Science and Engineering</p>
-        <p class="para-2">413 Courses</p>
-      </div>
-    </div>
-
-    <div class="course-grid">
-      <div>
-        <img src="thumbnails/thumbnail-9.jfif" class="thumbnail">
-      </div>
-
-      <div><p class="para-1">Health</p>
-        <p class="para-2">471 Courses</p>
-      </div>
-    </div>
-
-    <div class="course-grid">
-      <div>
-        <img src="thumbnails/thumbnail-10.jfif" class="thumbnail">
-      </div>
-
-      <div><p class="para-1">Social Sciences</p>
-        <p class="para-2">401 Courses</p>
-      </div>
-    </div>
-
-    <div class="course-grid">
-      <div>
-        <img src="thumbnails/thumbnail-11.jfif" class="thumbnail">
-      </div>
-
-      <div><p class="para-1">Arts Humanities</p>
-        <p class="para-2">338 Courses</p>
+      
+      <div><p class="para-1">More To Come</p>
+        <p class="para-2">Unknown</p>
       </div>
     </div>
 
   </div>
-  <script>
-     document.getElementById("logout-btn").addEventListener("click", function() {
-    fetch('/logout', {
-        method: 'POST', // Use POST to follow proper REST semantics
-    })
-    .then(response => {
-        if (response.redirected) {
-            window.location.href = response.url; // Redirect to the login page
-            window.location.reload(true);
-        }
-    })
-    .catch(error => {
-        console.error('Error logging out:', error);
-    });
-});
+<!--chatbox-->
+<div class="chat-icon" id="chat-icon"><i class="fa-solid fa-message"></i></div>
 
-
-    // Validate session on page load to prevent unauthorized access
-    window.addEventListener('load', function() {
-        fetch('/validate-session') // Add a new route in your server.js to validate session
-        .then(response => {
-            if (!response.ok) {
-                // If session is not valid, redirect to login page
-                window.location.href = '/login.html';
-            }
-        })
-        .catch(error => {
-            console.error('Session validation failed:', error);
-            window.location.href = '/login.html'; // Redirect if an error occurs
-        });
-    });
-  </script>
-
+    <div class="chatbox" id="chatbox">
+        <div class="chatbox-header">
+            <h2>FAQs</h2>
+            <button class="close-btn" id="close-btn">X</button>
+        </div>
+        <div class="chatbox-content" id="chatbox-content">
+            <ul>
+                <li><button class="faq-question" data-answer="Yes, We offer free courses">Are the courses free?</button></li>
+                <li><button class="faq-question" data-answer="To enroll in a course, simply search for the course you're interested in. Once you find it, click on the Enroll button on the course page.">How do I enroll in a course?</button></li>
+                <li><button class="faq-question" data-answer="Yes, many courses offer a certificate upon successful completion">Will I receive a certificate after completing a course?</button></li>
+                <li><button class="faq-question" data-answer="Once enrolled, you typically have lifetime access to the course materials, unless otherwise stated. ">How long do I have access to the course materials?</button></li>
+            </ul>
+        </div>
+        <div class="chatbox-answer" id="chatbox-answer"></div>
+    </div>
+    <script type="text/javascript" src="scripts/chat.js"></script>
 </body>
 </html>

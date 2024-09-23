@@ -40,27 +40,27 @@ body{
 }
 
 .coursera-svg{
-  width: 125px;
-  padding-left: 86px;
-  padding-top: 24px;
+  width: 180px;
+  padding-left: 56.5px;
+  padding-top: 9px;
   cursor: pointer;
 }
 
 .explore-btn{
-  color: rgb(0, 86, 210);
+  color: #00843d;
   font-weight: bold;
   font-size: 15px;
   padding: 10px 42px 10px 16px;
   margin-top: 12px;
   margin-left: 14px;
   background-color: white;
-  border: 1px solid rgb(0, 86, 210);
+  border: 1px solid #00843d;
   border-radius: 3px;
   cursor: pointer;
 }
 
 .explore-btn:hover{
-  background-color: rgba(0, 88, 210, 0.079);
+  background-color:rgba(0, 132, 61, 0.079);
   transition: background-color 0.15s;
 }
 
@@ -105,14 +105,14 @@ body{
 
 .search-input:focus{
   outline: none;
-  border-color: rgb(0, 86, 210);
+  border-color: #00843d;
 }
 
 .search-icon-div{
   position: absolute;
   right: 7px;
   top: 17px;
-  background-color: rgb(0, 86, 210);
+  background-color: #00843d;
   border-radius: 16px;
   width: 32px;
   height: 32px;
@@ -130,20 +130,6 @@ body{
   justify-content: center;
   flex: 1;
   text-wrap: nowrap;
-}
-
-#logout-btn{
-  padding: 6px 14px;
-  font-size: 14px;
-  border: 1px solid rgb(0, 86, 210);
-  background-color: white;
-  color: rgb(0, 86, 210);
-  cursor: pointer;
-}
-
-#logout-btn:hover{
-  background-color: rgba(0, 88, 210, 0.079);
-  transition: background-color 0.15s;
 }
 
 .online,
@@ -164,7 +150,7 @@ body{
 .online:hover,
 .find:hover,
 .english:hover{
-  color: rgb(0, 86, 210);
+  color: #00843d;
   transition: color 0.15s;
 }
 

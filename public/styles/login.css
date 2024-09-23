@@ -7,7 +7,7 @@
 body{
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 88, 210, 0.81);
+    background-color: rgb(0, 132, 61, 0.81);
 }
 
 .wrapper{
@@ -53,7 +53,7 @@ body{
     outline: none;
 }
 .input-field:focus{
-    border-color: rgb(0, 86, 210);
+    border-color: #00843d;
     transition: border-color 0.15s;
 }
 .input-field::placeholder{
@@ -65,9 +65,10 @@ body{
 }
 #password-hide{
     position: absolute;
-    top: 12px;
+    top: 25%;
     left: 350px;
     width: 30px;
+    
     cursor: pointer;
 }
 
@@ -94,11 +95,11 @@ body{
     border: none;
     border-radius: 30px;
     outline: none;
-    background: rgb(0, 86, 210);
+    background: #00843d;
     cursor: pointer;
 }
 .submit:hover{
-    background: rgba(0, 88, 210, 0.778);
+    background: rgb(0, 132, 61, 0.778);
     transition: background 0.15s;
 }
 
