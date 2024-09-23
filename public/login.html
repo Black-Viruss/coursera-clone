@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Coursera | Log In</title>
+    <link rel="icon" type="image/png" href="img/coursera-logo.png">
+    <link rel="stylesheet" href="styles/login.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body> 
+
+<div class="wrapper">
+    <div class="form-box">
+    
+        <div class="login-container" id="login">
+            <div class="top">
+                Login
+            </div>
+            <form method="POST" action="/login">
+                <div class="input-box">
+                    <input type="text" class="input-field login-email-field" name="email" placeholder="Email" required>
+                    <i class="bx bx-envelope"></i>
+                    <p class="error1"></p>
+                </div>
+                
+                <div class="input-box" id="input-box-lock">
+                    <input type="password" class="input-field login-password-field" id="password" name="password" placeholder="Password" required>
+                    <i class="bx bx-lock-alt"></i>
+                    <p class="error2"></p>
+                    <img src="img/password-hide.png" class="password-hide" id="password-hide" onclick="pass();">
+                </div>
+                <div class="input-box">
+                    <input type="submit" class="submit login-submit" value="Login">
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>   
+
+<script type="text/javascript" src="scripts/login.js"></script>
+
+</body>
+</html>

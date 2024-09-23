@@ -7,6 +7,11 @@
   <link rel="icon" type="image/png" href="img/coursera-logo.png">
   <link rel="stylesheet" href="styles/courses.css" type="text/css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Prevent caching of the page -->
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, private">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
 </head>
 <body>
   <div class="header-black">
@@ -29,6 +34,7 @@
     </div>
 
     <div class="navigation">
+      <div><button id="logout-btn">Logout</button></div>
       <div class="online">Online Degrees</div>
       <div class="find">Find your New Career</div>
       <div class="globe"><img src="img/globe.png" class="globe-icon"></div>
@@ -157,6 +163,38 @@
     </div>
 
   </div>
+  <script>
+     document.getElementById("logout-btn").addEventListener("click", function() {
+    fetch('/logout', {
+        method: 'POST', // Use POST to follow proper REST semantics
+    })
+    .then(response => {
+        if (response.redirected) {
+            window.location.href = response.url; // Redirect to the login page
+            window.location.reload(true);
+        }
+    })
+    .catch(error => {
+        console.error('Error logging out:', error);
+    });
+});
+
+
+    // Validate session on page load to prevent unauthorized access
+    window.addEventListener('load', function() {
+        fetch('/validate-session') // Add a new route in your server.js to validate session
+        .then(response => {
+            if (!response.ok) {
+                // If session is not valid, redirect to login page
+                window.location.href = '/login.html';
+            }
+        })
+        .catch(error => {
+            console.error('Session validation failed:', error);
+            window.location.href = '/login.html'; // Redirect if an error occurs
+        });
+    });
+  </script>
 
 </body>
 </html>

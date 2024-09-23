@@ -132,6 +132,20 @@ body{
   text-wrap: nowrap;
 }
 
+#logout-btn{
+  padding: 6px 14px;
+  font-size: 14px;
+  border: 1px solid rgb(0, 86, 210);
+  background-color: white;
+  color: rgb(0, 86, 210);
+  cursor: pointer;
+}
+
+#logout-btn:hover{
+  background-color: rgba(0, 88, 210, 0.079);
+  transition: background-color 0.15s;
+}
+
 .online,
 .find,
 .notification-icon{
