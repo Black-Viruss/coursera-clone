@@ -2,14 +2,12 @@
 <html>
 <head>
 
-    <title>AKU | Log In</title>
-    <link rel="icon" type="image/png" href="img/AKU-logo.png">
+    <title>Coursera | Log In</title>
+    <link rel="icon" type="image/png" href="img/coursera-logo.png">
     <link rel="stylesheet" href="styles/login.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 
 </head>
 <body> 
@@ -21,21 +19,23 @@
             <div class="top">
                 Login
             </div>
-            <div class="input-box">
-                <input type="text" class="input-field login-email-field" placeholder="Email">
-                <i class="bx bx-envelope"></i>
-                <p class="error1"></p>
-            </div>
-            <!--- nnsdbnb-->
-            <div class="input-box" id="input-box-lock">
-                <input type="password" class="input-field login-password-field" id="password" placeholder="Password">
-                <i class="bx bx-lock-alt"></i>
-                <p class="error2"></p>
-                <img src="img/password-hide.png" class="password-hide" id="password-hide" onclick="pass();">
-            </div>
-            <div class="input-box">
-                <input type="submit" class="submit login-submit" value="Login">
-            </div>
+            <form method="POST" action="/login">
+                <div class="input-box">
+                    <input type="text" class="input-field login-email-field" name="email" placeholder="Email" required>
+                    <i class="bx bx-envelope"></i>
+                    <p class="error1"></p>
+                </div>
+                
+                <div class="input-box" id="input-box-lock">
+                    <input type="password" class="input-field login-password-field" id="password" name="password" placeholder="Password" required>
+                    <i class="bx bx-lock-alt"></i>
+                    <p class="error2"></p>
+                    <img src="img/password-hide.png" class="password-hide" id="password-hide" onclick="pass();">
+                </div>
+                <div class="input-box">
+                    <input type="submit" class="submit login-submit" value="Login">
+                </div>
+            </form>
         </div>
 
     </div>
