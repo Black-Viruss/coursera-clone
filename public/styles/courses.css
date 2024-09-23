@@ -40,10 +40,16 @@ body{
 }
 
 .coursera-svg{
-  width: 180px;
-  padding-left: 56.5px;
-  padding-top: 9px;
+  width: 50px;
+  padding: 6px 10px 0 56px;
   cursor: pointer;
+}
+
+.training{
+  padding-top: 14px;
+  color: #00843d;
+  font-size: 30px;
+  font-family: 'Times New Roman';
 }
 
 .explore-btn{
@@ -134,14 +140,14 @@ body{
 #logout-btn{
   padding: 6px 14px;
   font-size: 14px;
-  border: 1px solid rgb(0, 86, 210);
+  border: 1px solid #00843d;
   background-color: white;
-  color: rgb(0, 86, 210);
+  color: #00843d;
   cursor: pointer;
 }
 
 #logout-btn:hover{
-  background-color: rgba(0, 88, 210, 0.079);
+  background-color: rgba(0, 132, 61, 0.079);
   transition: background-color 0.15s;
 }
 
