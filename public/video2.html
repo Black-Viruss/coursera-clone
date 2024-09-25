@@ -212,6 +212,22 @@
 
     <script type="text/javascript" src="scripts/chat.js"></script>
     <script type="text/javascript" src="scripts/video.js"></script>
+    <script>
+      // Validate session on page load to prevent unauthorized access
+    window.addEventListener('load', function() {
+        fetch('/validate-session') // Add a new route in your server.js to validate session
+        .then(response => {
+            if (!response.ok) {
+                // If session is not valid, redirect to login page
+                window.location.href = '/login.html';
+            }
+        })
+        .catch(error => {
+            console.error('Session validation failed:', error);
+            window.location.href = '/login.html'; // Redirect if an error occurs
+        });
+    });
+    </script>
 
 </body>
 </html>
