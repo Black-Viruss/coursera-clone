@@ -3,7 +3,14 @@ const mysql = require('mysql2');
 const bodyParser = require('body-parser');
 const session = require('express-session'); // Add session support
 const app = express();
-const port = 3000;
+require('dotenv').config();  // This loads environment variables from the .env file
+
+const dbHost = process.env.DB_HOST;
+const dbUser = process.env.DB_USER;
+const dbPassword = process.env.DB_PASSWORD;
+const DATABASE = process.env.DB;
+const port = process.env.PORT;
+
 
 // Middleware to parse incoming form data
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -24,10 +31,10 @@ app.use(session({
 
 // Create MySQL connection
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',  // Replace with your MySQL username
-    password: 'se221005',  // Replace with your MySQL password
-    database: 'farrukh' // Replace with your database name
+    host: `${dbHost}`,
+    user: `${dbUser}`,  // Replace with your MySQL username
+    password: `${dbPassword}`,  // Replace with your MySQL password
+    database: `${DATABASE}` // Replace with your database name
 });
 
 db.connect(err => {
